@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+:root {
+    /*Fonts-style*/
+    --font-header: 600 3rem 'Poppins', sans-serif;
+    --font-subheading: 400 1.25rem 'Poppins', sans-serif;
+    --font-placeholder: 500 1rem 'Poppins', sans-serif;
+    --font-button-text: 600 1rem 'Poppins', sans-serif;
+    --font-helper-text: 400 0.875rem 'Poppins', sans-serif;
+    /*Colors:*/
+    --background-color: #F9FAFB;
+    --color-header: #000000;
+    --color-subheading: #6C727F;
+    --color-button: #3662E3;
+    --secondary-color: #E5E7EB;
+    --container-color: #FFFFFF;
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--background-color);
+    text-align: center;
+}
+img {
+    margin-top: 5rem;
+}
+h1 {
+    font: var(--font-header)
+}
+.subheading {
+    max-width: 40%;
+    margin: 0 auto;
+    font: var(--font-subheading);
+    color: var(--color-subheading);
+    margin-bottom: 5rem;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 35rem;
+    max-width: 90%;
+    margin: 0 auto;
+    background-color: var(--container-color);
+    padding: 1rem;
+    border-radius: 1rem;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+}
+.container input {
+    font: var(--font-placeholder);
+    margin: 0 auto;
+    margin-bottom: 1rem;
+    border-radius: 0.7rem;
+    padding: 1rem;
+    border:1px solid var(--secondary-color);
+    text-align: center;
+    background-color: var(--background-color);
+    width: 90%;
+}
+.container button {
+    margin: 0 auto;
+    margin-bottom: 0.5rem;
+    width: 95%;
+    padding: 1rem;
+    border-radius: 0.7rem;
+    border: 0;
+    background-color: var(--color-button);
+    color: white;
+    font: var(--font-button-text);
+    cursor: pointer;
+}
+.container p{
+    font: var(--font-helper-text);
+    color: var(--color-subheading);
+}
+@media (max-width: 640px) {
+    .subheading {
+        max-width: 90%;
+    }
+    h1 {
+        font: var(--font-header);
+        font-size: 2rem; /* Adjust font size */
+    }
+}
