@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Sora', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #FAFAF9;
+    font-size: 0.875rem;
+    line-height: 1.8;
+}
+h1 {
+    font-size: 1.125rem;
+}
+
+img {
+    object-fit: cover;
+    margin: 1rem auto;
+    border-radius: 1rem;
+    width: 90%;
+    height: auto;
+}
+
+.container {
+    max-width: 25rem;
+    display: flex;
+    flex-direction: column;
+    background-color: #FFFFFF;
+    border-radius: 1rem;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+}
+.container-content{
+    width: 90%;
+    margin: 0 auto;
+}
+.design {
+    background-color: #E6D6FC;
+    border-radius: 1rem;
+    color: #883AE1;
+    font-weight: bold;
+    margin-bottom: 0.8rem;
+    width: fit-content;
+    text-align: center;
+    padding: 0.2rem 1.2rem;
+    font-size: 0.625rem;
+}
+
+.container-content h1 {
+    margin-bottom: 0.2rem;
+}
+.container-content .grey {
+    color: #6C727F;
+    margin-bottom: 1rem;
+}
+hr {
+    border: 0;
+    height: 1px;
+    background-color: #E5EAF0;
+    width: 100%;
+}
+.container-content .name {
+    margin-top: 1rem;
+}
+@media(max-width: 640px){
+    
+}
