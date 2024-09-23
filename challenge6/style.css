@@ -29,6 +29,8 @@ header p {
 .container {
     display: flex;
     width: 80rem;
+    width: 100%;
+    flex-wrap: wrap;
     margin: 0 auto;
     justify-content: center;
     gap: 48px;
@@ -40,7 +42,8 @@ header p {
     padding: 2rem;
     background-color: #212936;
     border-radius: 1rem;
-    width: 100%;
+    width: 90%;
+    max-width: 33rem;
     box-shadow: 3px 3px 10px rgba(0,0,0,0.1);
     line-height: 1.5;
 }
