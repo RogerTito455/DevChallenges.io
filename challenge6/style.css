@@ -43,7 +43,7 @@ header p {
     background-color: #212936;
     border-radius: 1rem;
     width: 90%;
-    max-width: 33rem;
+    max-width:20rem;
     box-shadow: 3px 3px 10px rgba(0,0,0,0.1);
     line-height: 1.5;
 }
