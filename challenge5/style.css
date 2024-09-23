@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap");
+*,
+::after,
+::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+:root {
+  --font-heading: 600 2.25rem "Sara", sans-serif;
+  --font-body: 1.25rem "Sara", sans-serif;
+  --font-body2: 1rem "Sara", sans-serif;
+  --font-list-item: 0.875rem "Sara", sans-serif;
+  /* Colors */
+  --primary-color: #18181b;
+  --secondary-color: #52525a;
+  --background-color: #fafaf9;
+  --card-color: #ffffff;
+  --star-active: #f5c044;
+  --start-inactive: #d4d4d8;
+  --list-color: #4ca154;
+}
+body {
+  font-family: "Sara", sans-serif;
+  background-color: var(--background-color);
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+h1 {
+  font: var(--font-heading);
+}
+.container {
+  justify-content: center;
+  max-width: 90%;
+  margin: 0 auto;
+  margin-top: 12rem;
+  gap: 1.5rem;
+  display: flex;
+}
+.container__left {
+  max-width: 50%;
+  margin-right: 3rem;
+}
+.left__star {
+  padding: 0.5rem;
+  border-radius: 100%;
+  background-color: var(--star-active);
+  width: fit-content;
+  margin-bottom: 1rem;
+  font-size: 1.3rem;
+}
+.container__left h1 {
+  margin-bottom: 1rem;
+}
+.container__left p {
+  font: var(--font-body);
+  color: var(--secondary-color);
+  line-height: 1.8;
+  margin-bottom: 2rem;
+}
+.left__list {
+  display: flex;
+  align-items: center;
+}
+.one-line {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.7rem;
+  list-style-type: none;
+  font: var(--font-list-item);
+  color: var(--secondary-color);
+}
+.one-line img {
+  margin-right: 0.5rem;
+}
+.container__right {
+  display: flex;
+  flex-direction: row;
+  max-width: 50%;
+}
+.container__card {
+  padding: 2rem;
+  border-radius: 1rem;
+  background-color: var(--card-color);
+  margin-bottom: 3rem;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+  max-width: 100%;
+}
+.container__card:nth-child(1) {
+  margin-left: auto;
+
+}
+
+.card__review {
+  display: flex;
+  align-items: center;
+  background-color: var(--card-color);
+}
+.card__brand img {
+  width: 6rem;
+  height: auto;
+  margin-right: 1rem;
+}
+.card__content h2 {
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+.card__content p {
+  max-width: 70%;
+  line-height: 1.5;
+  overflow-wrap: break-word;
+}
+@media (max-width: 760px) {
+  .container {
+    flex-wrap: wrap;
+    margin-top: 2rem;
+  }
+
+  .container__left {
+    max-width: 100%;
+    margin-right: 0;
+  }
+
+  .container__right {
+    max-width: 100%; /* Ensure the right container takes full width */
+  }
+
+  .container__card {
+    max-width: 100%; /* Ensure cards don't overflow */
+    right: 0; /* Remove the negative positioning */
+    margin-left: 0;
+  }
+
+  .container__card:nth-child(1) {
+    right: -50px; /* Removes the offset on small screens */
+  }
+}
