@@ -1,0 +1,69 @@
+    @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Lato', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f4f4f4;
+}
+img {
+    width: 100%;
+    object-fit: cover;
+}
+.img__main{
+    border-radius: 1rem 1rem 0 0;
+}
+picture {
+    display: flex;
+    position: relative;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 20em;
+    position: relative;
+    background-color: white;
+    border-radius: 1rem
+}
+.container__cloud {
+    position: absolute;
+    bottom: 0;
+}
+.container__content, .container__profile{
+    padding: 1rem;
+    display: flex;
+    gap: 1rem;
+}
+.container__content{
+    flex-direction: column;
+}
+.container__content h1 {
+    font-size: 1.5rem;
+}
+.container__content p {
+    color: grey;
+    margin-bottom: 1rem;
+}
+.img__profile {
+    width: 2rem;
+    border-radius: 1rem;
+    border: 2px solid grey;
+}
+.container__profile {
+    align-items: center;
+    border-top: 1px solid #e0e0e0;
+    padding-top: 1rem;
+}
+.container__profile h2 {
+    font-size: 1rem;
+    margin-bottom: 0.2rem;
+}
+.container__profile p {
+    font-size: 0.8rem;
+}
