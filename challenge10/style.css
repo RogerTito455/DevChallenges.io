@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+img {
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    min-height: 100vh;
+    background-color: #F2F9FE;
+    width: 90%;
+    color: #223344;
+    margin: 0 auto;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: inherit;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+.header__links {
+    display: flex;
+    list-style-type: none;
+}
+.header__links li {
+    margin-left: 1.5rem;
+}
+.header__links li a {
+    text-decoration: none;
+    color: #223344;
+}
+.header__links .active {
+    color: #111729;
+    font-weight: bold;
+}
+.container {
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+}
+.container__left {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.container__subheading {
+    font-weight: bold;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+}
+.container__heading{
+    font-size: 3.75rem;
+    color: #223344;
+}
+.container__buttons{
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+.container__buttons button {
+    border: 0;
+    border-radius: 1rem;
+    padding: 0.85rem 2rem;
+    background-color: #2A4DD0;
+    color: white;
+    font-weight: bold;
+}
+.container__positive {
+    display: flex;
+    align-items: center;    
+}
+.container__right{
+    width: 50%;
+}
+.container__right img {
+    width: 100%;
+}
