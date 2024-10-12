@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <img src="dccl--responsive-contact-page/contact-form-icon.svg" />
+    </header>
+    <main>
+      <h1>Interested in our business pricing?</h1>
+      <p>
+        Fill out the form to view details and we'll contect you as soon as
+        possible.
+      </p>
+      <div class="container">
+        <div>
+            <h2 class="container__title">Name</h2>
+            <input type="text" placeholder="Ethan Johnson" />
+        </div>
+        <div>
+            <h2 class="container__title">Company Email</h2>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$"
+              required
+              placeholder="etan@Johnson.com"
+            />
+        </div>
+        <div>
+            <h2 class="container__title">Company Size</h2>
+            <select name="company">
+              <option value="50-100 employees">50-100 employees</option>
+            </select>
+        </div>
+        <div>
+            <h2 class="container__title">Subject</h2>
+            <select name="subject">
+              <option value="Building Landing Pages">Building Landing Pages</option>
+            </select>
+        </div>
+       <div class = "container__message">
+        <h2 class="container__title">Message</h2>
+        <input type="text" placeholder="50-100 employees">
+       </div>
+       <div class = "container__button">
+        <button>Contact Sales</button>
+       </div>
+      </div>
+    </main>
+  </body>
+</html>
